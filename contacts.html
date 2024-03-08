@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact information</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Contact information</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
   <h1>My Contacts Details</h1>
-  <p>Email:Kaifatsidiq@gmail.com</p>
-  <p>Phone Number:7006685378</p>
-  <p>Address: ABubakar Colony Bemina</p>
-   <hr SIZE="1" noshade>
-    <form  action="mailto:kaifatsidiq@gmail.com" method="post" enctype="text/plain">
-    <label  > Your Name:</label>
-    <input type="text" name="YOUR NAME" value="">
+  <p>Email: kaifatsidiq@gmail.com</p>
+  <p>Phone Number: 7006685378</p>
+  <p>Address: Abubakar Colony Bemina</p>
+  <hr SIZE="1" noshade>
 
-    <br>
-    <label>Your Email:</label>
-    <input type=Email name="YOUR EMAIL" value=""><br>
-    <label>Your Message</label><br>
-    <textarea name="YOUR MESSAGE" rows="10" cols="30"></textarea><br>
+  <form action="mailto:kaifatsidiq@gmail.com" method="post" enctype="text/plain">
+    <div>
+      <label for="your-name">Your Name:</label>
+      <input type="text" id="your-name" name="YOUR NAME" value="">
+    </div>
 
-    <br>
-    <label for="">Choose a File to Upload</label><br>
-    <input type="file" name="" value=""><br>
-    <input type="submit" name="" >
+    <div>
+      <label for="your-email">Your Email:</label>
+      <input type="email" id="your-email" name="YOUR EMAIL" value="">
+    </div>
 
+    <div>
+      <label for="your-subject">Subject:</label>
+      <input type="text" id="your-subject" name="YOUR SUBJECT" value="">
+    </div>
+
+    <div>
+      <label for="your-message">Your Message:</label><br>
+      <textarea id="your-message" name="YOUR MESSAGE" rows="10" cols="30"></textarea>
+    </div>
+
+    <div>
+      <label for="file-upload">Choose a File to Upload:</label><br>
+      <input type="file" id="file-upload" name="file-upload">
+    </div>
+
+    <div>
+      <input type="submit" value="Submit">
+    </div>
   </form>
-  </body>
+</body>
 </html>
